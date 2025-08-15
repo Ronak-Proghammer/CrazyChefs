@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Index - NiceRestaurant Bootstrap Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" alt="" />
+          <!-- <i class="bi bi-fork-knife"></i> -->
+          <h1 class="sitename">CRAZY CHEFS</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#book-a-table">Book a Table</a></li>
+            <!-- <li><a href="#chefs">Chefs</a></li> -->
+            <li><a href="#events">Events</a></li>
+            <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown  2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+            <!-- <li><a href="#contact">Contact</a></li> -->
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="btn-getstarted d-none d-sm-block" href="#book-a-table"
+          >Book a Table</a
+        >
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="container-fluid hero-container" data-aos="fade-up">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-6 content-col">
+              <div class="content-wrapper">
+                <div class="status-badge">Reservations Open</div>
+                <h2>Savor the Moment, One Bite at a Time</h2>
+                <p>
+                  At Crazy Chefs, we bring the vibrant spirit of Morocco to life
+                </p>
+                <p>
+                  <b>ONE</b> bold dish, <b>ONE</b> unforgettable flavor, and one
+                  <b>CRAZY</b> bite at a time.
+                </p>
+
+                <div
+                  class="opening-hours"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <i class="bi bi-clock"></i>
+                  <span>Open Thursday - Sunday : 11am - 10pm</span>
+                </div>
+
+                <div class="btn-group">
+                  <a href="#book-a-table" class="btn btn-book">Book a Table</a>
+                  <a href="#menu" class="btn btn-menu">Explore Our Menu</a>
+                </div>
+
+                <div class="social-links">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 swiper-col">
+              <div
+                class="swiper hero-swiper init-swiper"
+                data-aos="zoom-out"
+                data-aos-delay="100"
+              >
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 800,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "effect": "fade",
+                    "slidesPerView": 1,
+                    "navigation": {
+                      "nextEl": ".swiper-button-next",
+                      "prevEl": ".swiper-button-prev"
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="img-container">
+                      <img
+                        src="assets/img/restaurant/misc-square-1.webp"
+                        alt="Restaurant Ambience"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-container">
+                      <img
+                        src="assets/img/restaurant/misc-square-2.webp"
+                        alt="Signature Dish"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-container">
+                      <img
+                        src="assets/img/restaurant/misc-square-3.webp"
+                        alt="Expert Chefs"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="about-content">
+                <h3>Our Culinary Journey</h3>
+                <p class="fst-italic">
+                  At Crazy Chefs, our story began with a shared obsession for
+                  bold spices, sizzling street food, and the vibrant soul of
+                  Moroccan cuisine. What started as a small idea quickly turned
+                  into a flavorful mission - to bring Morocco’s rich food
+                  culture to life with creativity, passion, and just the right
+                  amount of craziness.
+                </p>
+
+                <p>
+                  From mastering age-old recipes to adding our own wild twist,
+                  we’ve cooked our way through smoky souks, secret spice blends,
+                  and sizzling pans. Every dish we serve is a chapter from that
+                  journey; handcrafted, heartfelt, and full of flavor.
+                </p>
+
+                <p>
+                  Join us as we continue our culinary adventure; one plate, one
+                  spice, and one crazy idea at a time.
+                </p>
+
+                <!-- <div class="chef-signature mt-4">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <img
+                        src="assets/img/restaurant/chef-1.webp"
+                        class="chef-avatar rounded-circle"
+                        alt="Chef Portrait"
+                      />
+                    </div>
+                    <div class="col">
+                      <p class="chef-message mb-2">
+                        "Cooking is a language through which you can express
+                        harmony, creativity, happiness, beauty, poetry,
+                        complexity, magic, humor, provocation and culture all at
+                        once ."
+                      </p>
+                      <p class="chef-name">Executive Chef</p>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+              <div class="about-image-wrapper">
+                <img
+                  src="assets/img/restaurant/showcase-4.webp"
+                  class="img-fluid main-image shadow"
+                  alt="Restaurant Interior"
+                />
+                <img
+                  src="assets/img/restaurant/showcase-2.webp"
+                  class="img-fluid accent-image shadow"
+                  alt="Chef Preparing Food"
+                />
+                <span
+                  class="establishment-year d-flex align-items-center justify-content-center text-center"
+                  >Est. 2005</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5 pt-4 features-section">
+            <div
+              class="col-lg-3 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h4>Award Winning</h4>
+                <p>
+                  Our bold flavors and unique culinary twists have earned us
+                  more than just loyal fans. We've also received recognition for
+                  reimagining Moroccan street food. At Crazy Chefs, passion
+                  meets prestige in every bite.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-egg-fried"></i>
+                </div>
+                <h4>Fresh Ingredients</h4>
+                <p>
+                  We believe great food starts with the freshest ingredients.
+                  That’s why every dish is crafted using handpicked produce,
+                  aromatic herbs, and premium spices that capture the true
+                  essence of Morocco.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h4>Expert Team</h4>
+                <p>
+                  Behind every sizzling tagine and perfectly flipped omelette is
+                  our team of skilled chefs. Trained in both traditional
+                  Moroccan techniques and modern street-style flair, Crazy Chefs
+                  is powered by talent, passion, and just the right amount of
+                  madness.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-heart"></i>
+                </div>
+                <h4>Cooked with Love</h4>
+                <p>
+                  Every dish we serve is a labor of love. From spice blends to
+                  secret sauces, we pour heart, soul, and authenticity into
+                  every plate. Moroccan food is more than a meal, it’s a
+                  feeling.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+              <div class="stats-container">
+                <div class="stat-item">
+                  <span class="stat-number"
+                    ><span
+                      data-purecounter-start="0"
+                      data-purecounter-end="2"
+                      data-purecounter-duration="0"
+                      class="purecounter"
+                      >2</span
+                    >+</span
+                  >
+                  <p class="stat-label">Years of Flavourful Service</p>
+                </div>
+
+                <div class="stat-item">
+                  <span class="stat-number"
+                    ><span
+                      data-purecounter-start="0"
+                      data-purecounter-end="2"
+                      data-purecounter-duration="0"
+                      class="purecounter"
+                      >2</span
+                    ></span
+                  >
+                  <p class="stat-label">Crazy Talented Chefs</p>
+                </div>
+
+                <div class="stat-item">
+                  <span class="stat-number"
+                    ><span
+                      data-purecounter-start="0"
+                      data-purecounter-end="10"
+                      data-purecounter-duration="0"
+                      class="purecounter"
+                      >10</span
+                    >+</span
+                  >
+                  <p class="stat-label">Signature Moroccan Dishes</p>
+                </div>
+
+                <div class="stat-item">
+                  <span class="stat-number"
+                    ><span
+                      data-purecounter-start="0"
+                      data-purecounter-end="5000"
+                      data-purecounter-duration="0"
+                      class="purecounter"
+                      >5000</span
+                    >+</span
+                  >
+                  <p class="stat-label">Happy Tastebuds Served</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Menu Section -->
+      <section id="menu" class="menu section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Menu</h2>
+          <p>Handcrafted Dishes with Street-Style Energy</p>
+          <p>Taste the madness behind every Moroccan meal</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div class="menu-filters isotope-filters mb-5">
+              <ul>
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-salads">Salads</li>
+                <li data-filter=".filter-fries">Crazy Fries</li>
+                <li data-filter=".filter-snacks">Snacks</li>
+                <li data-filter=".filter-bowls">Rice Bowls</li>
+                <li data-filter=".filter-breakfast">Breakfast & Sandwiches</li>
+                <li data-filter=".filter-pasta">Pasta</li>
+                <li data-filter=".filter-desserts">Desserts & Tea</li>
+              </ul>
+            </div>
+
+            <div class="menu-container isotope-container row gy-4">
+              <!-- Crazy Fries -->
+
+              <!-- Luxury Start -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-fries d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Luxury Start</h3>
+                  <p class="menu-desc mb-3">
+                    Fries loaded with melted cheese, crispy chicken, thin potato
+                    sticks, and rich sauces.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Garlic Mayo</span>
+                    <span class="badge bg-warning text-dark">Truffle Mayo</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$12</span
+                  >
+                </div>
+              </div>
+
+              <!-- Fries Cajun -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-fries d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Fries Cajun</h3>
+                  <p class="menu-desc mb-3">
+                    Crispy golden fries tossed in bold Cajun spices for a smoky,
+                    zesty kick.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$6</span
+                  >
+                </div>
+              </div>
+
+              <!-- Cheesy Fries -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-fries d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Cheesy Fries</h3>
+                  <p class="menu-desc mb-3">
+                    Hot fries smothered in rich, creamy melted cheese.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10</span
+                  >
+                </div>
+              </div>
+
+              <!-- Spinach Mushroom Cheesy Fries -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-fries d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Spinach Mushroom Cheesy Fries</h3>
+                  <p class="menu-desc mb-3">
+                    Fries topped with sautéed spinach, mushrooms, and gooey
+                    cheese.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$12</span
+                  >
+                </div>
+              </div>
+
+              <!-- Fries Parmesan & Truffle Mayo -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-fries d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Fries Parmesan & Truffle Mayo</h3>
+                  <p class="menu-desc mb-3">
+                    Crispy fries with Parmesan cheese and a touch of truffle
+                    mayo elegance.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10</span
+                  >
+                </div>
+              </div>
+
+              <!-- Fries Special -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-fries d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Fries Special</h3>
+                  <p class="menu-desc mb-3">
+                    Golden fries topped with mayo, chili, and fresh onion.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10</span
+                  >
+                </div>
+              </div>
+
+              <!-- Pasticcio Fries -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-fries d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Pasticcio Fries</h3>
+                  <p class="menu-desc mb-3">
+                    Layered fries with rich sauce and melted cheese for a hearty
+                    bite.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Chicken +$3</span>
+                    <span class="badge bg-info text-dark">Beef +$5</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$12</span
+                  >
+                </div>
+              </div>
+
+              <!-- Parmesan Fries -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-fries d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Parmesan Fries</h3>
+                  <p class="menu-desc mb-3">
+                    Golden fries generously sprinkled with fresh Parmesan
+                    cheese.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark"
+                      >Extra Parmesan +$2</span
+                    >
+                    <span class="badge bg-info text-dark"
+                      >Cheddar Cheese +$2</span
+                    >
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Extra Sauces:</span>
+                    <span class="badge bg-warning text-dark">Mayo</span>
+                    <span class="badge bg-warning text-dark">Chili Mayo</span>
+                    <span class="badge bg-warning text-dark">Truffle Mayo</span>
+                    <span class="badge bg-warning text-dark">Algerian</span>
+                    <span class="badge bg-warning text-dark">Cocktail</span>
+                    <span class="badge bg-warning text-dark">Garlic Mayo</span>
+                    <span class="badge bg-warning text-dark"
+                      >Honey Sweet Mayo</span
+                    >
+                    <span class="badge bg-warning text-dark">Ketchup</span>
+                    <span class="badge bg-warning text-dark">Buffalo</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$8</span
+                  >
+                </div>
+              </div>
+
+              <!-- Snacks / Croquettes -->
+              <!-- Croquettes -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-snacks d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Side Kick Shrimp (7 pcs)</h3>
+                  <p class="menu-desc mb-3">
+                    Moroccan-style shrimp marinated in spices and served with
+                    flavorful sauce.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$11</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 isotope-item filter-snacks d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Glazed Big Chicken</h3>
+                  <p class="menu-desc mb-3">
+                    Juicy wings cooked in our special glaze, served with your
+                    choice of sauce.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Honey Garlic</span>
+                    <span class="badge bg-warning text-dark">Buffalo</span>
+                    <span class="badge bg-warning text-dark">Barbecue</span>
+                    <span class="badge bg-warning text-dark"
+                      >Special Sauce</span
+                    >
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 isotope-item filter-snacks d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Eggplant Roll</h3>
+                  <p class="menu-desc mb-3">
+                    Tender eggplant rolls filled with seasoned vegetables and
+                    herbs.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 isotope-item filter-snacks d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">
+                    Chilly Potato with Garlic Sauce
+                  </h3>
+                  <p class="menu-desc mb-3">
+                    Crispy potatoes tossed in chili seasoning, drizzled with
+                    garlic sauce.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$6</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 isotope-item filter-snacks d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Garlic Bread</h3>
+                  <p class="menu-desc mb-3">
+                    Freshly baked bread topped with garlic butter and herbs.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$5.85</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 isotope-item filter-snacks d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Stopples Chicken Bites</h3>
+                  <p class="menu-desc mb-3">
+                    Crispy chicken bites with Crazy sauce, Moroccan spices,
+                    sesame & parsley.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$6.95</span
+                  >
+                </div>
+              </div>
+
+              <!-- Bowls -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-bowls d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">
+                    Honey Garlic Chicken Rice Bowl
+                  </h3>
+                  <p class="menu-desc mb-3">
+                    Tender chicken in honey garlic sauce over rice, served with
+                    choice of sauce.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Buffalo</span>
+                    <span class="badge bg-warning text-dark">Truffle Mayo</span>
+                    <span class="badge bg-warning text-dark">Sweet Sauce</span>
+                    <span class="badge bg-warning text-dark">Tahini Sauce</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$18</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 isotope-item filter-bowls d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">
+                    Spinach Garlic Shrimp Rice Bowl
+                  </h3>
+                  <p class="menu-desc mb-3">
+                    Juicy shrimp with garlic spinach over rice, served with your
+                    choice of sauce.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Buffalo</span>
+                    <span class="badge bg-warning text-dark">Truffle Mayo</span>
+                    <span class="badge bg-warning text-dark">Sweet Sauce</span>
+                    <span class="badge bg-warning text-dark">Tahini Sauce</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$23.75</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 isotope-item filter-bowls d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Chicken Couscous</h3>
+                  <p class="menu-desc mb-3">
+                    Traditional Moroccan couscous with vegetables and tender
+                    chicken.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$30</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 isotope-item filter-bowls d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Tender Fries Bowl</h3>
+                  <p class="menu-desc mb-3">
+                    Golden fries topped with tender chicken and a drizzle of
+                    your favorite sauce.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Buffalo</span>
+                    <span class="badge bg-warning text-dark">Truffle Mayo</span>
+                    <span class="badge bg-warning text-dark">Sweet Sauce</span>
+                    <span class="badge bg-warning text-dark">Tahini Sauce</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$15</span
+                  >
+                </div>
+              </div>
+
+              <!-- Chicken Wrap -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-breakfast d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Chicken Wrap</h3>
+                  <p class="menu-desc mb-3">
+                    Grilled chicken with lettuce, tomato, onion, crispy fries,
+                    and melted cheese.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Garlic Mayo</span>
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Extra Cheese</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$12.80</span
+                  >
+                </div>
+              </div>
+
+              <!-- Vegetarian Wrap -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-breakfast d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Vegetarian Wrap</h3>
+                  <p class="menu-desc mb-3">
+                    Fresh veggies with cheese, tomato, lettuce, onion, grilled
+                    eggplant, and fries.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Tahini Sauce</span>
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Extra Cheese</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10.55</span
+                  >
+                </div>
+              </div>
+
+              <!-- Traditional Moroccan Sandwich -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-breakfast d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Traditional Moroccan Sandwich</h3>
+                  <p class="menu-desc mb-3">
+                    Crispy makooda with fresh tomato and onion in warm Moroccan
+                    bread.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Harissa Mayo</span>
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Olives</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10</span
+                  >
+                </div>
+              </div>
+
+              <!-- Buffalo Shrimp Sandwich -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-breakfast d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Buffalo Shrimp Sandwich</h3>
+                  <p class="menu-desc mb-3">
+                    Crispy shrimp with lettuce, tomato, onion, capers, and
+                    pickles in tangy buffalo sauce.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Buffalo Mayo</span>
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Extra Shrimp</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$13.95</span
+                  >
+                </div>
+              </div>
+
+              <!-- Chicken Tender Wrap -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-breakfast d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Chicken Tender Wrap</h3>
+                  <p class="menu-desc mb-3">
+                    Crispy chicken tenders with lettuce, onion, tomato, pickles,
+                    and capers.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Garlic Mayo</span>
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Extra Tenders</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$11</span
+                  >
+                </div>
+              </div>
+
+              <!-- Morocco Omelette with Khlea -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-breakfast d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Morocco Omelette with Khlea</h3>
+                  <p class="menu-desc mb-3">
+                    Fluffy omelette with traditional Moroccan Khlea.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Harissa</span>
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Extra Cheese</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10</span
+                  >
+                </div>
+              </div>
+
+              <!-- Sausage Omelette -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-breakfast d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Sausage Omelette</h3>
+                  <p class="menu-desc mb-3">
+                    Classic omelette loaded with savory sausage and herbs.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark"
+                      >Tomato Ketchup</span
+                    >
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Extra Sausage</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$11</span
+                  >
+                </div>
+              </div>
+
+              <!-- Arabic Omelette -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-breakfast d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Arabic Omelette</h3>
+                  <p class="menu-desc mb-3">
+                    Simple and light omelette with Middle Eastern spices.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Tahini Sauce</span>
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Olives</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$6</span
+                  >
+                </div>
+              </div>
+
+              <!-- Sausage with Cherry Tomato & Mushroom Omelette -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-breakfast d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">
+                    Sausage with Cherry Tomato & Mushroom Omelette
+                  </h3>
+                  <p class="menu-desc mb-3">
+                    Omelette filled with sausage, juicy cherry tomatoes, and
+                    mushrooms.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Garlic Mayo</span>
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Extra Mushrooms</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$11</span
+                  >
+                </div>
+              </div>
+
+              <!-- Mushroom Omelette -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-breakfast d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Mushroom Omelette</h3>
+                  <p class="menu-desc mb-3">
+                    Light and fluffy omelette packed with sautéed mushrooms.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-success">Sauces:</span>
+                    <span class="badge bg-warning text-dark">Garlic Mayo</span>
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Extra Cheese</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$11</span
+                  >
+                </div>
+              </div>
+
+              <!-- Onion Pasta -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-pasta d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Onion Pasta</h3>
+                  <p class="menu-desc mb-3">
+                    Pasta tossed with caramelized onions and savory spices for a
+                    rich, sweet-salty flavor.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Chicken +$3</span>
+                    <span class="badge bg-info text-dark">Shrimp +$6</span>
+                    <span class="badge bg-info text-dark">Beef Donair +$4</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$16.99</span
+                  >
+                </div>
+              </div>
+
+              <!-- Arrabbiata Pasta -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-pasta d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Arrabbiata Pasta</h3>
+                  <p class="menu-desc mb-3">
+                    Classic Italian-style pasta with a spicy tomato and garlic
+                    sauce.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Chicken +$3</span>
+                    <span class="badge bg-info text-dark">Shrimp +$6</span>
+                    <span class="badge bg-info text-dark">Beef Donair +$4</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$13.75</span
+                  >
+                </div>
+              </div>
+
+              <!-- Eggplant Pasta -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-pasta d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Eggplant Pasta</h3>
+                  <p class="menu-desc mb-3">
+                    Pasta mixed with roasted eggplant, herbs, and a light tomato
+                    sauce.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Chicken +$3</span>
+                    <span class="badge bg-info text-dark">Shrimp +$6</span>
+                    <span class="badge bg-info text-dark">Beef Donair +$4</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$15.45</span
+                  >
+                </div>
+              </div>
+
+              <!-- Pasta Oven -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-pasta d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Pasta Oven</h3>
+                  <p class="menu-desc mb-3">
+                    Baked pasta with layers of sauce, cheese, and perfectly
+                    cooked pasta shells.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Chicken +$3</span>
+                    <span class="badge bg-info text-dark">Shrimp +$6</span>
+                    <span class="badge bg-info text-dark">Beef Donair +$4</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$16.99</span
+                  >
+                </div>
+              </div>
+
+              <!-- Red Carpet Pasta -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-pasta d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Red Carpet Pasta</h3>
+                  <p class="menu-desc mb-3">
+                    Layers of creamy mac & cheese with rich sauces, topped with
+                    crushed red Cheetos.
+                  </p>
+                  <p class="mb-3">
+                    <span class="fw-bold text-primary">Add-ons:</span>
+                    <span class="badge bg-info text-dark">Chicken +$3</span>
+                    <span class="badge bg-info text-dark">Shrimp +$6</span>
+                    <span class="badge bg-info text-dark">Beef Donair +$4</span>
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$15.87</span
+                  >
+                </div>
+              </div>
+
+              <!-- Moroccan Salad -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-salads d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Moroccan Salad</h3>
+                  <p class="menu-desc mb-3">
+                    Fresh tomato, onion, cucumber, lettuce, olive oil, spices,
+                    and lemon juice.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$9</span
+                  >
+                </div>
+              </div>
+
+              <!-- Crazy Salad -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-salads d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Crazy Salad</h3>
+                  <p class="menu-desc mb-3">
+                    Lettuce with truffle mayo, confit tomato, lemon juice,
+                    anchovies, and garlic.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$11.99</span
+                  >
+                </div>
+              </div>
+
+              <!-- Cheese Salad -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-salads d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Cheese Salad</h3>
+                  <p class="menu-desc mb-3">
+                    Lettuce, tomato, onion, cucumber, feta cheese, lemon juice,
+                    and spices.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10.75</span
+                  >
+                </div>
+              </div>
+
+              <!-- Yama Quinoa Salad -->
+              <div class="col-lg-4 col-md-6 isotope-item filter-salads d-flex">
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Yama Quinoa Salad</h3>
+                  <p class="menu-desc mb-3">
+                    Quinoa with feta cheese, strawberry, cucumber, tomato, lemon
+                    juice, mustard, and honey.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$12.99</span
+                  >
+                </div>
+              </div>
+
+              <!-- Kunafa -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-desserts d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Kunafa</h3>
+                  <p class="menu-desc mb-3">
+                    Traditional Middle Eastern dessert with shredded pastry,
+                    sweet cheese, and syrup.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10</span
+                  >
+                </div>
+              </div>
+
+              <!-- Crème Caramel -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-desserts d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Crème Caramel</h3>
+                  <p class="menu-desc mb-3">
+                    Classic caramel custard with a silky smooth texture and rich
+                    flavor.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$10</span
+                  >
+                </div>
+              </div>
+
+              <!-- Moroccan Fruit Salad -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-desserts d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Moroccan Fruit Salad</h3>
+                  <p class="menu-desc mb-3">
+                    Seasonal fresh fruits mixed with Moroccan-style citrus
+                    dressing.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$8</span
+                  >
+                </div>
+              </div>
+
+              <!-- Melawi with Ricotta Cheese -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-desserts d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Melawi with Ricotta Cheese</h3>
+                  <p class="menu-desc mb-3">
+                    Flaky Moroccan flatbread served with ricotta cheese and
+                    Moroccan tea.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$8</span
+                  >
+                </div>
+              </div>
+
+              <!-- Traditional Moroccan Tea -->
+              <div
+                class="col-lg-4 col-md-6 isotope-item filter-desserts d-flex"
+              >
+                <div
+                  class="menu-card hover-underline menu-item p-4 text-center h-100 shadow-sm flex-fill d-flex flex-column"
+                >
+                  <h3 class="menu-title mb-2">Traditional Moroccan Tea</h3>
+                  <p class="menu-desc mb-3">
+                    Freshly brewed Moroccan green tea with mint leaves and
+                    sugar.
+                  </p>
+                  <span class="menu-price fw-bold fs-5 text-primary mt-auto"
+                    >$3</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5" data-aos="fade-up">
+            <a href="#" class="download-menu">
+              <i class="bi bi-file-earmark-pdf"></i> Download Full Menu
+            </a>
+          </div>
+
+          <!-- Chef's Specials -->
+          <!-- <div class="col-12 mt-5" data-aos="fade-up">
+            <div class="specials-badge">
+              <span><i class="bi bi-award"></i> Chef's Specials</span>
+            </div>
+            <div class="specials-container">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="menu-item special-item">
+                    <div class="menu-item-img">
+                      <img
+                        src="assets/img/restaurant/main-3.webp"
+                        alt="Special Dish"
+                        class="img-fluid"
+                      />
+                      <div class="menu-item-badges">
+                        <span class="badge-special">Special</span>
+                        <span class="badge-vegan">Vegan</span>
+                      </div>
+                    </div>
+                    <div class="menu-item-content">
+                      <h4>Mediterranean Grilled Salmon</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Praesent ut aliquam metus. Vivamus fermentum magna quis.
+                      </p>
+                      <div class="menu-item-price">$24.99</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="menu-item special-item">
+                    <div class="menu-item-img">
+                      <img
+                        src="assets/img/restaurant/main-7.webp"
+                        alt="Special Dish"
+                        class="img-fluid"
+                      />
+                      <div class="menu-item-badges">
+                        <span class="badge-special">Special</span>
+                        <span class="badge-spicy">Spicy</span>
+                      </div>
+                    </div>
+                    <div class="menu-item-content">
+                      <h4>Signature Ribeye Steak</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nam accumsan risus ut dui pretium, eget elementum nisi.
+                      </p>
+                      <div class="menu-item-price">$32.99</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <!-- /Menu Section -->
+
+      <!-- Book A Table Section -->
+      <section id="book-a-table" class="book-a-table section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-5 mb-5">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="reservation-info">
+                <div class="text-content">
+                  <h3>Book Your Table</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                    leo. Aliquam erat volutpat.
+                  </p>
+
+                  <div class="reservation-details mt-4">
+                    <div class="detail-item">
+                      <i class="bi bi-clock"></i>
+                      <div>
+                        <h5>Opening Hours</h5>
+                        <p>
+                          Thursday - Saturday: 11:00 AM - 08:00 PM<br />
+                          Sunday: 11:00 AM - 05:00 PM
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <i class="bi bi-geo-alt"></i>
+                      <div>
+                        <h5>Location</h5>
+                        <p>
+                          12445 Lake Fraser Dr SE D426<br />
+                          Calgary, AB T2J 7A4
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="detail-item">
+                      <i class="bi bi-telephone"></i>
+                      <div>
+                        <h5>Call Us</h5>
+                        <p>+1 (604) 698-6387</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <div class="reservation-image">
+                <img
+                  src="assets/img/restaurant/showcase-7.webp"
+                  alt="Restaurant interior"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row" id="reservationForm">
+            <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+              <div class="reservation-form-wrapper">
+                <div class="form-header">
+                  <h3>Get In Touch</h3>
+                  <p>Please fill the form below to send an inquiry</p>
+                </div>
+
+                <form
+                  action="forms/book-a-table.php"
+                  method="post"
+                  role="form"
+                  class="php-email-form mt-4"
+                >
+                  <div class="row gy-4">
+                    <div class="col-lg-4 form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Your Name"
+                        required=""
+                      />
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Your Email"
+                        required=""
+                      />
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="phone"
+                        placeholder="Your Phone"
+                        required=""
+                      />
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <select name="people" class="form-select" required="">
+                        <option value="">Number of guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6+ People</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input
+                        type="date"
+                        name="date"
+                        class="form-control"
+                        placeholder="Date"
+                        required=""
+                      />
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input
+                        type="time"
+                        class="form-control"
+                        name="time"
+                        id="time"
+                        placeholder="Time"
+                        required=""
+                      />
+                    </div>
+
+                    <div class="form-group mt-4">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="3"
+                        placeholder="Special Requests (Optional)"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your booking request was sent. We will call back or send
+                      an Email to confirm your reservation. Thank you!
+                    </div>
+                  </div>
+
+                  <div class="text-center mt-4">
+                    <button type="submit" class="btn-book-table">
+                      Book Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Book A Table Section -->
+
+      <!-- Location Section -->
+      <section id="location" class="location section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Location</h2>
+          <p>
+            Visit us at our beautiful location in the heart of the city. We
+            can't wait to serve you!
+          </p>
+        </div>
+
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4857.806187729474!2d-114.07190202351582!3d50.94197437169008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537176b83537c055%3A0xf7cfe563d1562645!2s12445%20Lake%20Fraser%20Dr%20SE%2C%20Calgary%2C%20AB%20T2J%207A4!5e1!3m2!1sen!2sca!4v1754157578064!5m2!1sen!2sca"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="info-container">
+                <div class="section-header">
+                  <h2>Find Us</h2>
+                  <p>Visit Us Today</p>
+                </div>
+
+                <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+                  <div class="info-icon">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div class="info-content">
+                    <h3>Our Location</h3>
+                    <p>12445 Lake Fraser Dr SE D426, Calgary, AB T2J 7A4</p>
+                  </div>
+                </div>
+
+                <div class="info-card" data-aos="fade-up" data-aos-delay="400">
+                  <div class="info-icon">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div class="info-content">
+                    <h3>Reservations</h3>
+                    <p>+1 (604) 698-6387</p>
+                    <p class="small-text">
+                      We recommend making reservations at least 48 hours in
+                      advance
+                    </p>
+                  </div>
+                </div>
+
+                <div class="info-card" data-aos="fade-up" data-aos-delay="500">
+                  <div class="info-icon">
+                    <i class="bi bi-clock"></i>
+                  </div>
+                  <div class="info-content">
+                    <h3>Hours</h3>
+                    <div class="hours-grid">
+                      <div class="day">Thursday - Saturday</div>
+                      <div class="time">11:00 AM - 08:00 PM</div>
+
+                      <div class="day">Sunday</div>
+                      <div class="time">11:00 AM - 05:00 PM</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="cta-wrapper"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <a href="#" class="btn-book">Make a Reservation</a>
+                  <a href="#" class="btn-contact">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Location Section -->
+
+      <!-- Events Section -->
+      <section id="events" class="events section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="intro-text text-center mb-5"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <h2>Create Unforgettable Moments</h2>
+            <p>
+              Whether it's a wedding, corporate event, or private gathering, our
+              catering is perfect for all occasions. Experience the magic of
+              Moroccan hospitality and cuisine.
+            </p>
+          </div>
+
+          <div class="event-types">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="event-type-card">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-calendar-heart"></i>
+                  </div>
+                  <h3>Weddings & Celebrations</h3>
+                  <p>
+                    Celebrate love and life the Moroccan way — with rich
+                    flavors, warm hospitality, and unforgettable ambiance.
+                    Whether it's an intimate gathering or a grand wedding, we
+                    craft every detail to make your occasion truly special.
+                  </p>
+                  <span class="capacity">Up to 150 guests</span>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="250"
+              >
+                <div class="event-type-card">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-building"></i>
+                  </div>
+                  <h3>Corporate Events</h3>
+                  <p>
+                    Impress your clients and colleagues with a unique Moroccan
+                    dining experience. From team lunches to executive dinners,
+                    our elegant setting and authentic cuisine create the perfect
+                    atmosphere for productive and memorable gatherings.
+                  </p>
+
+                  <span class="capacity">Up to 100 guests</span>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="event-type-card">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <h3>Private Gatherings</h3>
+                  <p>
+                    Host your special moments in an intimate Moroccan setting
+                    filled with charm and flavor. Whether it’s a birthday,
+                    anniversary, or family reunion, we offer cozy spaces and
+                    personalized service to make every gathering unforgettable.
+                  </p>
+
+                  <span class="capacity">Up to 50 guests</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-showcase" data-aos="fade-up" data-aos-delay="150">
+            <div class="row g-3">
+              <div class="col-lg-8">
+                <div class="main-image" data-aos="zoom-in" data-aos-delay="200">
+                  <img
+                    src="assets/img/restaurant/event-1.webp"
+                    alt="Event Space"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="row g-3">
+                  <div class="col-lg-12 col-md-6">
+                    <div
+                      class="gallery-item"
+                      data-aos="zoom-in"
+                      data-aos-delay="250"
+                    >
+                      <img
+                        src="assets/img/restaurant/event-5.webp"
+                        alt="Event"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-6">
+                    <div
+                      class="gallery-item"
+                      data-aos="zoom-in"
+                      data-aos-delay="300"
+                    >
+                      <img
+                        src="assets/img/restaurant/event-7.webp"
+                        alt="Event"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-cta" data-aos="fade-up" data-aos-delay="200">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h3>Ready to Plan Your Special Event?</h3>
+                <p>
+                  Let’s bring your vision to life! Fill out the form below and
+                  our team will get back to you promptly to discuss the details
+                  and help you create an unforgettable experience.
+                </p>
+              </div>
+              <div class="col-lg-4 text-lg-end">
+                <a href="#reservationForm" class="btn-reserve"
+                  >Send an Inquiry</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Events Section -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">CRAZY CHEFS</span>
+            </a>
+            <p>
+              Step into the heart of Morocco with every bite. From rich tagines
+              to sweet mint tea, we bring the flavors of tradition and warmth to
+              your table. Visit us for a truly authentic culinary experience.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4>Contact Us</h4>
+            <p>12445 Lake Fraser Dr SE D426, Calgary, AB T2J 7A4</p>
+            <p>Calgary, T2J 7A4</p>
+            <p>Alberta</p>
+            <p class="mt-4">
+              <strong>Phone:</strong> <span>+1 (604) 698-6387</span>
+            </p>
+            <p>
+              <strong>Email:</strong> <span>sabbabsalaheddine@gmail.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">CRAZY CHEFS</strong>
+          <span>All Rights Reserved</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
