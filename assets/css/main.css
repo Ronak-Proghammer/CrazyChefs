@@ -215,13 +215,17 @@ h6 {
   }
 
   .header .btn-getstarted {
-    order: 2;
+    order: 3;
     margin: 0 15px 0 0;
     padding: 6px 20px;
   }
 
   .header .navmenu {
-    order: 3;
+    order: 4;
+  }
+
+  .header .halal-logo {
+    order: 2;
   }
 }
 
@@ -235,6 +239,22 @@ h6 {
   --background-color: #0c1e48cf;
 }
 
+.scrolled .header .logo h1 {
+  color: #ffff;
+}
+
+.halal-logo img {
+  height: 80px; /* adjust as needed */
+  width: auto;
+  display: block;
+}
+
+/* On smaller screens, keep it to the far right */
+@media (max-width: 991px) {
+  .halal-logo img {
+    height: 80px; /* slightly smaller on mobile */
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -2740,7 +2760,7 @@ section,
 
 .hover-underline::after,
 .hover-underline::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
