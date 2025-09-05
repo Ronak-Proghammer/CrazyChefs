@@ -2765,3 +2765,20 @@ section,
 .menu-hidden {
   display: none !important;
 }
+
+.sauces, .addons{
+  display: none;
+}
+
+.isotope-item {
+  display: none; /* hidden by default */
+}
+.isotope-item.show {
+  display: block; /* visible when filtered */
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
