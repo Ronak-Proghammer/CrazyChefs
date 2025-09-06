@@ -761,7 +761,6 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
   position: relative;
 }
 
@@ -2784,4 +2783,141 @@ section,
 
 .menu-hidden {
   display: none !important;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+/* Header Bar */
+.menu-header {
+  background: var(--accent-color);
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.menu-header.sticky-top-menu {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 130px;
+  z-index: 1000;
+}
+
+.menu-header {
+  /* opacity: 0; */
+  transform: translateY(-20px); /* slightly up */
+  transition: all 0.5s ease;
+}
+
+/* Sticky state */
+.sticky-top-menu {
+  opacity: 1;
+  transform: translateY(0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  /* background-color: #fff; */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem rgba(196, 125, 68, 0.25);
+}
+
+/* Sections */
+/* === Sections & items === */
+.menu-wrapper {
+  position: relative;
+}
+.menu-section {
+  padding: 22px 0 6px;
+} /* tighter spacing */
+.menu-section h3 {
+  color: var(--contrast-color);
+  border-left: 4px solid var(--accent-color);
+  padding-left: 10px;
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+}
+/* Menu items */
+.menu-item {
+  background: var(--surface-color);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-price {
+  font-size: 22px;
+  font-weight: bolder;
+  color: brown;
+}
+
+/* No results message */
+#noResults {
+  display: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: wheat;
+  padding: 40px 0;
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  .menu-item {
+    padding: 14px 16px;
+  }
+  .menu-section h3 {
+    font-size: 1.35rem;
+  }
+}
+#categoryDropdown {
+  padding: 6px 12px; /* inner spacing */
+  border-radius: 10px; /* rounded corners */
+  border: 1px solid #ccc; /* border color */
+  background-color: var(--nav-dropdown-background-color); /* background color */
+  color: var(--contrast-color); /* text color */
+  cursor: pointer;
+}
+
+/* Optional: custom arrow */
+#categoryDropdown::after {
+  content: "▼"; /* down arrow */
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+}
+
+
+
+#categoryDropdown:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+#categoryDropdown {
+  width: 100%; /* always fill parent */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Forcing options to stay within select width */
+#categoryDropdown option {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
