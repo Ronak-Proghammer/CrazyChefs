@@ -294,7 +294,8 @@
   <option value="bowls">Rice Bowls</option>
   <option value="breakfast">Breakfast & Sandwiches</option>
   <option value="pasta">Pasta</option>
-  <option value="desserts">Desserts & Tea</option>
+  <option value="desserts">Desserts</option>
+  <option value="drinks">Hot & Cold Drinks</option>
 `;
     }
 
